@@ -1,0 +1,52 @@
+﻿@model Newtonsoft.Json.Linq.JArray
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row d-flex align-items-center flex-wrap">
+            <div class="col-md-7">
+                <h1 class="h2">Products</h1>
+            </div>
+            <div class="col-md-5">
+                <ul class="breadcrumb d-flex justify-content-end">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Products</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+        <div class="row bar">
+            <div class="col-md-12">
+                <p class="text-muted lead text-center">In our hardware department we offer wide selection of the best products we have found and carefully selected worldwide. Pellentesque habitant morbi tristique senectus et netuss.</p>
+                <div class="products-big">
+                    <div class="row products">
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-lg-4 col-md-4">
+                                <div class="product">
+                                    <div class="image">
+                                        <a asp-action="detail" asp-route-id="@item["id"]">
+                                            <img src="@item["imagePath"]" alt="@item["imagetitle"]" class="img-fluid image1">
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h3 class="h5"><a asp-action="detail" asp-route-id="@item["id"]">@item["name"]</a></h3>
+                                        <p class="price">$@item["price"]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 banner mb-small text-center"><a href="#"><img src="img/banner2.jpg" alt="" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

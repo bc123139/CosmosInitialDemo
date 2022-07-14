@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTTComputersAPI", "MTTComputersAPI\MTTComputersAPI.csproj", "{A88CB39E-C516-4415-9F27-EF7AE4E26DDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTTComputersUI", "MTTComputersUI\MTTComputersUI.csproj", "{82B10912-05D6-42E9-BA73-730A8C464A7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A88CB39E-C516-4415-9F27-EF7AE4E26DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88CB39E-C516-4415-9F27-EF7AE4E26DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88CB39E-C516-4415-9F27-EF7AE4E26DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88CB39E-C516-4415-9F27-EF7AE4E26DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B10912-05D6-42E9-BA73-730A8C464A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B10912-05D6-42E9-BA73-730A8C464A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B10912-05D6-42E9-BA73-730A8C464A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B10912-05D6-42E9-BA73-730A8C464A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15A7F7AD-3D79-4505-9BE8-8E716CAC1FB8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/perfectwebdevs
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MTTComputersAPI\\MTTComputersAPI.csproj
+		SccProjectName1 = MTTComputersAPI
+		SccLocalPath1 = MTTComputersAPI
+		SccProjectUniqueName2 = MTTComputersUI\\MTTComputersUI.csproj
+		SccProjectName2 = MTTComputersUI
+		SccLocalPath2 = MTTComputersUI
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+SELECT 
+	[Name]
+	,[Description]
+	,[ImagePath]
+	,[Price]
+	,'Computer' as [Category]
+FROM [Product]
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT C.[CustomerId]
+      ,C.[CustomerName], 
+   CA.[address1] AS [CustomerAddress.Address1]
+      ,CA.[address2] AS [CustomerAddress.address2]
+      ,CA.[city] AS [CustomerAddress.city]
+      ,CA.[addressState] AS [CustomerAddress.State]
+  FROM [Customer] C
+ LEFT JOIN CustomerAddress CA on CA.customerid = c.customerid
+ for json path 
+ 
+ 
+ /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT O.ID, O.OrderDate, O.CustomerID, O.TotalAmount, 
+	(Select OD.ProductID, OD.Price, OD.Quantity  from OrderDetails OD WHERE OD.OrderID = O.ID
+	for json path ) as 'OrderDetails'
+ from [Order] O
+ for json path
+

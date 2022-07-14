@@ -1,0 +1,1 @@
+﻿[{"ID":1,"OrderDate":"2020-08-18T08:32:09.023","CustomerID":20,"TotalAmount":1000,"OrderDetails":[{"ProductID":1,"Price":100,"Quantity":2},{"ProductID":2,"Price":100,"Quantity":1},{"ProductID":3,"Price":100,"Quantity":1}]}]

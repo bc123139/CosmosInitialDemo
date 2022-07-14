@@ -1,0 +1,22 @@
+{
+  "id": "BA65D06D-464D-4797-8523-78ACC267C1EA",
+  "customerName": "Dummy User",
+  "totalAmount": 1300,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "quantity": 2,
+      "price": 100
+    },
+    {
+      "productId": 2,
+      "quantity": 1,
+      "price": 100
+    },
+    {
+      "productId": 3,
+      "quantity": 1,
+      "price": 100
+    }
+  ]
+}
